@@ -10,7 +10,7 @@ char usuario[100], prontuario[10], nome_file[100]="RESULTADO ";
 
 master_room()
 {
-	char c;
+	char teste;
 
 	system("cls");
 	printf("====================================================\n");
@@ -22,13 +22,11 @@ master_room()
 	printf("\t4. SOBRE O TESTE\n");
 	printf("\tF. FIM\n");
 	printf("====================================================\n");
+	printf("\n");
 
-	scanf("%c", &c);
-	
-	printf("%c\n", c);
-	
+	teste = getch();
 
-	switch(c)
+	switch(teste)
 	{
 		case '1':
 			printf("CADASTRA O BAGULHO AAAAAAAAA");
@@ -57,7 +55,7 @@ master_room()
 		break;
 		
 		default:
-			printf("TU TINHA UM OBJETIVO\nBURRAO VOCE EM");
+			printf("OPÇÃO INVALIDA!!");
 
 	}	
 
