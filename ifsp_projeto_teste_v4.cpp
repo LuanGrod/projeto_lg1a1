@@ -23,6 +23,7 @@ fim_programa()
 	}
 }
 
+
 master_room()
 {
 	inicio:
@@ -65,7 +66,6 @@ master_room()
 			system("REFERENCIAL_TEORICO.TXT");
 			fclose(sobre);
 			goto inicio;
-			
 		break;
 		
 		case 'F':
@@ -125,14 +125,15 @@ setlocale(LC_ALL,"");
 	
 printf("DIGITE SEU NOME.................: ");
 scanf("%[^\n]s", usuario);
-	
-printf("DIGITE SEU PRONTUÁRIO...........: ");
-scanf("%s", &prontuario);
 
 i = stricmp (usuario, "MASTER");
 if (i == 0) master_room();
 else
+{
+printf("DIGITE SEU PRONTUÁRIO...........: ");
+scanf("%s", &prontuario);
 cria_arquivo();
+}
 
 return 0;	
 }
@@ -140,8 +141,10 @@ return 0;
 
 main ()
 {
-	
 login();
+
+
+
 
 
 return 0;	
