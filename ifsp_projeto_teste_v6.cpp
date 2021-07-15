@@ -23,6 +23,15 @@ fim_programa()//finaliza o programa
 	}
 }
 
+realiza_teste()
+{
+	
+	
+	
+	
+	
+}
+
 
 master_room()//ambiente do administrador
 {
@@ -199,7 +208,11 @@ master_room()//ambiente do administrador
 		break;
 		
 		case '3':
-			printf("REALIZA O TESTE AE PFV");
+			realiza_teste();
+			
+			
+			
+			
 		break;
 		
 		case '4':
@@ -278,9 +291,11 @@ else
 printf("DIGITE SEU PRONTUÁRIO...........: ");
 scanf("%s", &prontuario);
 cria_arquivo();
+realiza_teste();
+
 }
 
-printf("aloo");
+
 
 }
 
