@@ -23,6 +23,7 @@ fim_programa()//finaliza o programa
 	}
 }
 
+
 realiza_teste()
 {
 	
@@ -256,6 +257,7 @@ int len = strlen(nome_file);
 for (int i = 0, posicao = 0; i < len; i++, posicao++) 
 {
     if (nome_file[posicao]==' ') nome_file[posicao] = '_';
+	nome_file[i] = toupper(nome_file[i]);
 	nome_file[i] = nome_file[posicao];
 }
 strcat(nome_file, "_");
@@ -269,8 +271,6 @@ strcat(nome_file, prontuario);
 		
 printf("\n");
 
-if (arquivo == NULL) printf("ERRO! ARQUIVO NÃO FOI CRIADO!\n");
-else printf("ARQUIVO CRIADO COM SUCESSO!");
 return 0;
 }
 
@@ -278,8 +278,6 @@ return 0;
 login()//realiza o login do usuario
 {
 int i;
-
-setlocale(LC_ALL,"");
 	
 printf("DIGITE SEU NOME.................: ");
 scanf("%[^\n]s", usuario);
@@ -292,7 +290,6 @@ printf("DIGITE SEU PRONTUÁRIO...........: ");
 scanf("%s", &prontuario);
 cria_arquivo();
 realiza_teste();
-
 }
 
 
