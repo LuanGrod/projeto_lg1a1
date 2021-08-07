@@ -8,6 +8,7 @@
 using namespace std;
 
 /*
+Copyright (c) 2021 Luan Rodrigues
 Autor: Luan Guilherme Rodrigues
 Prontuário: SP307319X
 Disciplina: Lógica de Programação I (A1LG1)
@@ -411,8 +412,8 @@ master_room();
 }
 else
 {
-cria_arquivo();
 quest_base();	
+cria_arquivo();
 teste_master();	
 system(nome_file);
 }

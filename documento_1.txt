@@ -1,0 +1,2 @@
+Link do vídeo explicando o funcionamento do programa no youtube: https://youtu.be/jAnhK9yMG2M
+Repositório no GitHub contendo todas as versões do programa: https://github.com/LuanGrod/projeto_lg1a1
